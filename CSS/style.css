@@ -325,25 +325,7 @@ section {
     text-align: center;
 }
 
-.buttonteam {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: Black;
-  background-color: rgb(200, 200, 200);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
 
-.buttonteam a{text-decoration: none;}
-
-.buttonteam a:hover, a:active {color:white;}
-
-.buttonteam:hover {
-  background-color: #555;
-}
 /*Source for css of links here: https://www.w3schools.com/css/css_link.asp*/
 .membername a:link, a:visited {
   width:100%;	
