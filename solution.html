@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Project 2215</title>
+  
+  <link rel="icon" type="image/png" href="images/atlas.png"/>
+  <meta charset="UTF-8">
+  <meta name="title" content="Project ID 2215">
+  <meta name="description" content="Collorative Project for Haliburton County, Remote Sensing Data and Tools Framework for Haliburton Highlands Land Trust .">
+  <meta name="keywords" content="Remote Sensing, Automation, Database, Spatial Analysis, GIS, HHLT">
+  <meta name="author" content="Bharat, Mansi Shah, Sunayana Sashikumar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- style sheet link --> 
+  <link rel="stylesheet" href="CSS/style.css">  
+</head>
+
+<!-- beginning of the body -->
+<body>
+  
+  
+  <div class="logo"> 
+    <!-- links user to the index.html page when the logo is clicked on. -->
+    <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+  </div>
+  <!-- end of logo -->
+
+  <!-- navigational bar -->
+  <!-- sources: some elements for the nav bar are dervived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <a href="solution.html" class="active">Solution</a>
+    <a href="team.html">Team</a>
+    <!-- javascript for the nav bar on smaller screen devices. -->
+    <!-- onlcick executes javascript when the button is clicked. -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <!-- end of navigational bar -->
+ 
+  <!-- header image -->
+  <div class="headerimg">
+  </div>
+  <!-- end of header image -->
+
+<!-- beginning of page content -->
+<!-- main -->
+<main>
+<!-- section -->
+<section>
+
+  <!-- solution summary -->
+  <div class="solutions-summary">
+    <h1>SOLUTIONS.</h1>
+    <p>For Remote Sensing data, we have created a Postgres database and along with is a metadata table which is having details of the collected imageries in the database like, 
+	Satellite name, date, source and whether the image is orthorectified or not. We have a QGIS plugin tool workflow for land cover classification as demanded by our client. 
+	Automated workflows are also been detailed for Watershed and Habitat suitability analysis for Haliburton county.
+    At the end we have created some good quality and appealing maps from the results to show outputs of Spatial Analysis workflows.
+	</p>
+  </div>
+    <!-- end of solution summary section -->
+  
+<!-- line break -->
+<hr>
+
+<div class="component-container">
+    <h1 class="component-heading">Our Major Project Components</h1>
+    <div class="component-card-container">
+        
+        
+        <div class="component-card">
+            <img src="images/remote.png" alt="Remote Sensing">
+            <h2>Remote Sensing</h2>
+        </div>
+		<div class="component-card">
+            <img src="images/database.png" alt="Database">
+            <h2>Spatial Database</h2>
+        </div>
+        <div class="component-card">
+            <img src="images/spatial.png" alt="Spatial">
+            <h2>Spatial Analysis</h2>
+        </div>
+		<div class="component-card">
+            <img src="images/automation.png" alt="Automation">
+            <h2>Automation Programming</h2>
+        </div>
+        
+    </div>
+</div>
+ 
+</section>
+</main>
+<!-- end of page content -->
+
+<!-- footer -->
+<footer class="footer">
+    <p>&#169; Collaborative Project 2022 &#65073; Fleming College.</p>
+</footer>
+<!-- end of footer -->
+
+<!-- javascript file -->
+<script src="JS/javascript.js"></script>
+
+<!-- end of body -->
+</body>
+<!-- end of html -->
+</html>
