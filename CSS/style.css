@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+/* box sizing */
+* {
+    box-sizing: border-box; 
+}
+
+/* body element */
+html, body {
+    position: absolute;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 100%; 
+    width: 100%; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.01em; 
+} 
+
+/* h1 to h6 elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 5px;
+}
+
+/* h1 element */
+h1 {
+    font-size: 1.75em; 
+}
+
+/* h2 element */
+h2 {
+    font-size: 1.68em; 
+}
+
+/* paragraph element */
+p {
+    text-align: justify; 
+}
+
+/****** beginning of nav bar and logo section *****/
+/* logo */
+.logo {
+    position: absolute; 
+    margin-left: 0px; 
+    margin-top: -30px;
+}
+
+/* logo image */ 
+.logo img {
+    height: 100px;  
+    margin-top: 26px;
+    margin-left: 5px; 
+}
+
+/* nav bar */
+.topnav {
+    background-color: #ffffff;
+    border-bottom: 10px solid #1B5886; 
+    overflow: hidden;
+    padding: 0px; 
+}
+
+/* nav bar a */
+.topnav a {
+    float: right; 
+    padding: 25px 16px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* nav bar link hovers */
+.topnav a:hover {
+    background-color: #1B5886;
+    color: #ffffff; 
+    height: 74px;
+}
+
+/* home button */
+.topnav a.active {
+    background-color: #eb9e29;
+    color: white;
+    height: 74px; 
+}
+  
+/* nav bar icon for smaller screens */
+.topnav .icon {
+    color: #1B5886;
+    float: right; 
+    display: none;
+}
+
+/* nav bar icon hover for smaller screens */
+.topnav .icon a:hover {
+    color: #ffffff; 
+}
+  
+/* some sources for the following code has been dervived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+/* media query for smaller devices (resizes nav bar) */
+@media screen and (max-width: 760px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+ }
+
+/* some sources for the following code has been dervived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+/* media query for smaller devices (resizes nav bar) */
+@media screen and (max-width: 760px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      float: left;
+      right: 0;
+      top: 0;
+}
+
+/* some sources for the following code has been dervived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+/* media query for smaller devices (resizes nav bar) */
+.topnav.responsive a {
+    float: left;
+    display: block;
+    text-align: center;
+    }
+}  
+/****** end of nav bar and logo section *****/
+
+/****** beginning of the header image *****/
+/* header image */
+.headerimg {
+    background: url("../images/haliburton4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+	position: relative; 
+    display: block;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+/****** end of the header image *****/
+
+/* sections */
+section {
+    padding: 10px; 
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 2.2rem;
+    background-color: #ffffff;
+}
+
+/* background */
+.background {
+    padding: 8px;
+    text-align: center;	
+}
+
+/* problem background h3*/
+.problem-background h3 {
+    padding: 8px; 
+}
+
+/* client */
+.client {
+    padding: 8px;
+}
+.source {
+	font-size: 12px
+}
+
+/****** beginning of the study area section *****/
+/* studyarea summary */
+.studyarea-summary {
+    padding: 8px;
+}
+
+
+/* website */
+.website {
+    flex: 50%; 
+    margin: 30px; 
+    margin-left: 50px;
+}
+
+/* studyarea image */
+.website img {
+    width: 100%; 
+    margin-top: -10px; 
+    margin-bottom: 5px;
+}
+
+/* studyarea links active */
+.website a {
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.8rem;
+}
+
+/* studyarea paragraph */
+.website p {
+    border-bottom: 6px solid #eb9e29;
+    line-height: 2rem; 
+    text-align: center;
+}
+
+/* media query for smaller devices (resizes the studyarea section) */
+@media screen and (max-width: 1060px) {
+    .studyarea {
+        width: 70%;
+        display: block; 
+    }
+ }
+/****** end of the studyarea section *****/
+
+/* solutions summary */
+.solutions-summary {
+    padding: 8px; 
+}
+
+.component-container {
+    background-color: #F0F8FF;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.component-heading {
+    margin: 1rem 2rem;
+    background-color: rgb(176, 196, 222);
+    text-align: center;
+    border-bottom: 2px solid rgba(119, 136, 153);
+    border-top: 2px solid rgba(119, 136, 153) ;
+    padding: 1rem;
+}
+
+.component-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.component-card {
+    margin-top: 2rem;
+    border: 2px solid rgb(6, 15, 11);
+    padding: 0;
+    border-radius: 7px;
+}
+
+.component-card img {
+    max-width: 60vw;
+    width: 250px;
+    height: 200px;
+    border-bottom: 2px solid mintcream;
+}
+
+.component-card h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.component-card {
+    margin: 2rem 1rem;
+}
+
+/****** beginning of the teams.html section *****/
+/* team summary */
+.team-summary {
+    padding: 8px; 
+}
+
+/* row */ 
+.row { 
+    display: flex; 
+    justify-content: center;
+    margin: auto;
+    width: 100%; 
+    padding: 8px; 
+    line-height: 2.2rem;
+}
+
+/* members */
+.members {
+    flex: 100%; 
+    margin: 30px; 
+    margin-left: 50px;
+}
+
+/* members h3 */
+.members h3 {
+    font-size: 1 rem;
+    line-height: 0.5px; 
+    letter-spacing: 0.2 rem;
+}
+.members h4 {
+	letter-spacing: 1 px;
+}
+	
+.memberimg {
+    background-color: #f5f5f5;
+    border-radius: 5px 5px 0 0;
+}
+
+/* members img */
+.memberimg img {
+    width: 60%; 
+    height: 60%;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/*member name */
+.membername {
+    background-color: #ebebeb;
+    padding-top: 1px; 
+    border-radius: 0 0 5px 5px;
+}
+
+.membername p {
+    text-align: center;
+}
+
+.buttonteam {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: Black;
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonteam a{text-decoration: none;}
+
+.buttonteam a:hover, a:active {color:white;}
+
+.buttonteam:hover {
+  background-color: #555;
+}
+/*Source for css of links here: https://www.w3schools.com/css/css_link.asp*/
+.membername a:link, a:visited {
+  width:100%;	
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.membername a:hover, a:active {
+  border: 2px solid white;	
+  background-color: #555;
+  color: white;
+}
+
+
+/* media query for smaller devices (resizes the row) */
+@media screen and (max-width: 760px) {
+    .row {
+        width: 100%;
+        display: block;  
+    }
+}
+/****** end of the teams.html section *****/
+
+/****** beginning of the footer section *****/
+/* footer */
+footer {
+    position: relative;
+    padding: 32px; 
+    left: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    width: 100%;
+    background-color: #1B5886; 
+}
+
+/* footer */
+.footer {
+    position: relative;
+}
+
+/* footer paragraph */ 
+.footer p { 
+     color: #ffffff; 
+     text-align: center; 
+     font-size: 1.1em;
+}
+/****** end of the footer section *****/
