@@ -189,12 +189,12 @@ section {
 
 /* studyarea image */
 .website img {
-    width: 75%; 
+    width: 50%; 
     margin-top: -10px; 
     margin-bottom: 5px;
 }
 .website-link img {
-    width: 75%; 
+    width: 50%; 
 }	
 	
 /* studyarea links active */
