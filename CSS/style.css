@@ -193,7 +193,10 @@ section {
     margin-top: -10px; 
     margin-bottom: 5px;
 }
-
+.website-link img {
+    width: 75%; 
+}	
+	
 /* studyarea links active */
 .website a {
     color: #000000;
